@@ -21,6 +21,7 @@
 .header .brand-logo{
   color:white;
   float:left;
+  display:block;
   padding-left:12px;
 }
 .header .navigation-bar{
@@ -89,7 +90,6 @@
 .section-newsletter >h3{
   display: inline-block;
   padding: 0;
-  margin-left: 200px;
   float:left;
 }
 .section-newsletter>form{
@@ -116,7 +116,7 @@ form>input{
 }
 /* media queries */
 
-@media(max-width:748px)
+@media (min-width:410px) and (max-width:748px)
 {
   .brand-logo,.navigation-bar
   ,form,#email-input,#submit-btn,.section-newsletter>h3
@@ -131,5 +131,11 @@ form>input{
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
+  }
+}
+@media screen and (max-width:388px)
+{
+  .wrapper{
+    width: 388px;
   }
 }
