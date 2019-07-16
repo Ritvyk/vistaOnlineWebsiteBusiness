@@ -133,9 +133,23 @@ form>input{
     margin-bottom: 25px;
   }
 }
-@media screen and (max-width:388px)
+@media screen and (max-width:415px)
 {
   .wrapper{
     width: 388px;
+  }
+    .brand-logo,.navigation-bar
+  ,form,#email-input,#submit-btn,.section-newsletter>h3
+  {
+    text-align: center;
+    width: 100%;
+    margin:none;
+    margin-left: none;
+    float:none;
+  }
+  .section-designing-information >.box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
   }
 }
