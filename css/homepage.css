@@ -1,0 +1,135 @@
+/* homepagge.css */
+.wrapper{
+  font-family: sans-serif;
+}
+/*glooba styling */
+.active-state{
+  color:orange;
+}
+.section-newsletter::after,
+.section-designing-information::after,
+.header::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+/*glooba styling */
+.header{
+  border-bottom:3px solid orange;
+  background-color:black;
+}
+.header .brand-logo{
+  color:white;
+  float:left;
+  padding-left:12px;
+}
+.header .navigation-bar{
+  float:right;
+  margin-top:30px;
+  padding-right:10px;
+}
+.navigation-links{
+  color:white;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size:17px;
+  font-weight: bold;
+  padding: 0 0 0 40px;
+  border-right:solid 1px white;
+  padding-right:10px;
+}
+.navigation-links:nth-child(3){
+  border-right:none;
+}
+.navigation-links:nth-child(1)
+{
+  color:orange;
+}
+.section-show-information{
+  text-align: center;
+  margin:0;
+  padding-top:100px;
+  border:0.5px solid black;
+  color:white;
+  padding-bottom:200px;
+  background-image: url("../img/showcase.jpg");
+  background-size: cover;
+}
+.section-show-information >p{
+  width: 40%;
+   margin:auto;
+}
+.section-show-information>h1{
+  font-size: 70px;
+}
+.section-designing-information{
+  padding: 20px;
+}
+.box{
+  width: 33%;
+  text-align: center;
+  float:left;
+}
+.description-box{
+  width: 30%;
+  text-align: center;
+  margin:auto;
+}
+.footer{
+  text-align: center;
+  padding: 10px;
+  color:white;
+  background-color: orange;
+}
+.section-newsletter{
+  padding:10px;
+  background-color: black;
+  color:white;
+}
+.section-newsletter >h3{
+  display: inline-block;
+  padding: 0;
+  margin-left: 200px;
+  float:left;
+}
+.section-newsletter>form{
+  float: right;
+  margin-top:20px;
+}
+form>button
+{
+  background-color:orange;
+  border:none;
+  outline:none;
+  padding:10px;
+  color:white;
+  font-weight: bold;
+}
+form>button:hover
+{
+  background-color: orangered;
+}
+form>input{
+  width: 250px;
+  height: 35px;
+  padding-left: 10px;
+}
+/* media queries */
+
+@media(max-width:748px)
+{
+  .brand-logo,.navigation-bar
+  ,form,#email-input,#submit-btn,.section-newsletter>h3
+  {
+    text-align: center;
+    width: 100%;
+    margin:none;
+    margin-left: none;
+    float:none;
+  }
+  .section-designing-information >.box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
