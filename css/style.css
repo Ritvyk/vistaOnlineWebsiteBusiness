@@ -1,0 +1,249 @@
+/* ritvik */
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+.active{
+    color:orange;
+}
+.header{
+    border-bottom: 5px solid orange;
+    padding: 20px;
+    background-color:black;
+}
+.header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header>.brand-logo>h1{
+    margin:0;
+    padding: 0;
+    color:white;
+}
+.header>.brand-logo{
+    float: left;
+}
+.header>.navigation-bar{
+    float: right;
+    margin-top:10px;
+}
+.navigation-bar>a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    color:white;
+}
+.navigation-bar>a:nth-child(1)
+{
+    color:orange;
+}
+.section-showcase{
+    min-height: 80%;
+    border:0.5px solid;
+    background-image: url("../img/showcase.jpg");
+    background-origin: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information-about-website>h1{
+    font-size:80px;
+    margin:0;
+    padding:0;
+}
+.section-showcase>.information-about-website{
+    width: auto;
+    margin:auto;
+    margin-top:13%;
+    text-align: center;
+    color:white;
+}
+.section-newsletter{
+    background-color:black;
+    border-top:5px solid orange; 
+    padding:20px 25px 10px 25px;
+}
+.section-newsletter::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+.section-newsletter>h3{
+    margin: 0;
+    padding: 0;
+    color:white;    
+    float:left;
+}
+.section-newsletter>form{
+    float: right;
+}
+.section-newsletter>form>button{
+    background-color: orange;
+    color:white;
+    outline:none;
+    border:none;
+    padding:10px;
+}
+.section-newsletter>form>button:hover{
+    background-color: orangered;
+}
+.section-newsletter>form>input:focus{
+    border: 2px solid orangered;
+    
+}
+.section-newsletter>form>input{
+    padding-left: 7px;
+    height: 34px;
+    width: 250px;
+}
+.section-service-information{
+    padding:15px;
+}
+.section-service-information>.box{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.section-service-information::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+.box>img{
+    width: 30%;
+}
+.box>p{
+    width: 60%;
+    margin:auto;
+}
+.footer{
+    padding: 5px;
+    text-align: center;
+    background-color:orange;
+}
+.footer>h3{
+    margin:0;
+    padding: 0;
+}
+.section-showcase::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.section-showcase>.box1{
+    padding: 10px;
+    margin-top:50px;
+    color:white;
+    width:53%;
+    float: left;
+}
+.box1>h2,.box2>h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.section-showcase>.box1>div{
+    padding:10px;
+    text-align: justify;
+}
+.section-showcase>.box1>div:nth-child(odd)
+{
+    background-color: black;
+}
+.section-showcase>.box2{
+    padding: 10px;
+    color:white;
+    margin-top:110px;
+    text-align: justify;
+    width: 39%;
+        float:right;
+    background-color:black;
+}
+
+/*services page styling here */
+.section-showcase>.box1-service-list,.section-showcase>.box2-quotation{
+    padding:12px;
+}
+.section-showcase>.box1-service-list{
+    width: 56%;
+    float:left;
+}
+.box1-service-list>h2,.box2-quotation>h2{
+    text-align: center;
+}
+.section-showcase>.box1-service-list>div{
+    background-color: white;
+    box-shadow: 5px 5px 6px black;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.section-showcase>.box2-quotation{
+    width: 35%;
+    background-color: black;
+    float: right;
+}
+.box2-quotation>form{
+    margin:auto;
+    display: block;
+}
+.box2-quotation>form>button{
+    background-color: orange;
+    border:none;
+    outline: none;
+}
+.box2-quotation>form>button:hover{
+    background-color: orangered;
+}
+.box2-quotation>form>input:focus,.box2-quotation>form>select:focus,.box2-quotation>form>textarea:focus{
+    border:2px solid orange;
+}
+.section-showcase>.box2-quotation>form>input
+,.box2-quotation>form>button,.box2-quotation>form>select,
+.box2-quotation>form>textarea{
+    width: 100%;
+    margin-bottom: 4px;
+    height: 30px;
+}
+/*media queries */
+@media screen and (max-width:712px)
+{
+   .header>.brand-logo , .header>.navigation-bar,
+    .section-service-information>.box
+    ,.section-newsletter>h3,.section-newsletter>form,
+    .section-newsletter>form>button,.section-newsletter>form>input
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: none;
+    }
+    .section-newsletter>h3{
+        margin-bottom: 5px;
+    }
+    .section-showcase>.box1,.section-showcase>.box2{
+        width: 100%;
+        float: none;
+        margin:0;
+        padding: 0;
+    }
+    .section-showcase>.box2{
+        margin-top:10px;
+    }
+    .section-showcase>.box1-service-list,.section-showcase>.box2-quotation{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+
+@media screen and (max-width:360px)
+{
+    .wrapper{
+        width: 360px;
+    }
+}
