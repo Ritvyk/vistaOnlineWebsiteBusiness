@@ -1,0 +1,60 @@
+/* this css manages the forms and inputs desings on the go ! */
+.section-showcase{
+  min-height: 40%;
+}
+.section-showcase>h2{
+  color:white;
+  text-align: center;
+}
+.section-showcase>.login-form{
+    background-color: rgba(26, 25, 23, 0.507);
+    border-radius: 1px;
+  padding: 10px;
+  margin:10% auto;
+  width: fit-content;
+}
+.login-form>form{
+  color:white;
+  width: fit-content;
+  margin:auto;
+  padding: 10px;
+}
+.login-form>form>button{
+  background-color: orange;
+  outline:none;
+  border:none;
+  margin:auto;
+  display: block;
+  margin-top:10px;
+  padding: 9px;
+  color:white;
+  font-size:15px;
+}
+form>button:hover{
+  background-color: orangered;
+  cursor: pointer;
+}
+.login-form>form>input{
+  width: 250px;
+  height: 30px;
+  padding-left: 6px;
+  padding: 20px;
+  margin-top:5px;
+}
+form>input:focus{
+  border:2px solid orange;
+}
+form>select{
+  margin-top:5px;
+  width: 250px;
+  padding:10px;
+}
+.section-showcase>.signup-box>h2{
+  color: white;
+  text-align: center;
+}
+.section-showcase>.signup-box{
+  float:left;
+  background-color: rgba(26, 25, 23, 0.507);
+  border-right: solid orange;
+}

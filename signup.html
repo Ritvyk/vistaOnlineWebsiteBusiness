@@ -8,6 +8,8 @@
     <meta name="description" content="Site is the basic template of a landing website name Vista Website Business">
     <title>Vista Website Business</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- to manage styling of the inputs fields in the form  -->
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -35,36 +37,52 @@
             <h3>Please Subscribe To Our Newsletter</h3>
             <form>
                 <input type="email" name="email" placeholder="Enter Email...">
-                <button type="submit" onclick=  "alert('Thanks For The Subscription , You Will Be Notified Soon !')">Subscribe</button>
+                <button type="submit"
+                    onclick="alert('Thanks For The Subscription , You Will Be Notified Soon !')">Subscribe</button>
             </form>
         </div>
         <!-- section newsletter ends here -->
 
         <!-- section for the showcase block starts from here -->
         <div class="section-showcase">
-            <!-- div block in the section showcase which will contain the information about the business -->
-            <div class="box1">
-                <h2 class="active">About</h2>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repudiandae optio tempore nam,
-                        fugit, rerum temporibus nesciunt amet maxime dolores blanditiis quam cupiditate alias
-                        voluptatum, dolore sit aperiam quo! Odio.lo Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Tempora eum ipsum facilis nemo illo, tempore qui sit porro aut ratione consequatur. Cumque
-                        ea quaerat aliquam ducimus earum debitis nesciunt! Pariatur!</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repudiandae optio tempore nam,
-                        fugit, rerum temporibus nesciunt amet maxime dolores blanditiis quam cupiditate alias
-                        voluptatum, dolore sit aperiam quo! Odio.</p>
+            <!--  div the signup box starts here -->
+            <div class="signup-box">
+                <h2> <span class="active"> User/Costumer</span> Signup</h2>
+                <div class="login-form">
+                    <form>
+                        <input type="text" name="First-Name" id="fname" placeholder="First Name"> <br>
+                        <input type="text" name="Last-Name" id="lname" placeholder="Last Name"> <br>
+                        <input type="text" name="Email" placeholder="Enter Email"> <br>
+                        <input type="text" name="Mobile-Number" value="91-" placeholder="Mobile Number"> <br>
+                        <select name="Country">
+                            <option value="Country">Country</option>
+                            <option value="India">India</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Americs">America</option>
+                            <option value="more">--Updating--</option>
+                        </select> <br>
+                        <select name="City">
+                            <option value="City">City</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Alwar">Alwar</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="more">--Updating--</option>
+                        </select> <br>
+                        <div>
+                            <label for="rememberme-radio">I Agree To Terms And Conditions.</label>
+                            <input type="radio" name="rememberme-radio"><br>
+                        </div>
+                        <button type="submit" name="login-btn">Sign-Up</button>
+                    </form>
                 </div>
             </div>
-            <!-- about block in section showcase ends here -->
             <div class="box2">
                 <h2 class="active">What We Do?</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ut nemo excepturi pariatur
                     iste doloribus quasi, odit incidunt architecto sunt. Laudantium repellendus repudiandae
                     reprehenderit error tempore veritatis corrupti soluta?</p>
             </div>
+            <!--signup box ends here  -->
         </div>
         <!-- section showcase ends here -->
         <div class="footer">

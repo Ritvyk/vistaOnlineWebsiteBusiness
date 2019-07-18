@@ -8,6 +8,8 @@
     <meta name="description" content="Site is the basic template of a landing website name Vista Website Business">
     <title>Vista Website Business</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- to manage styling of the inputs fields in the form  -->
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -42,28 +44,17 @@
 
         <!-- section for the showcase block starts from here -->
         <div class="section-showcase">
-            <!-- div block in the section showcase which will contain the information about the business -->
-            <div class="box1">
-                <h2 class="active">About</h2>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repudiandae optio tempore nam,
-                        fugit, rerum temporibus nesciunt amet maxime dolores blanditiis quam cupiditate alias
-                        voluptatum, dolore sit aperiam quo! Odio.lo Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Tempora eum ipsum facilis nemo illo, tempore qui sit porro aut ratione consequatur. Cumque
-                        ea quaerat aliquam ducimus earum debitis nesciunt! Pariatur!</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit repudiandae optio tempore nam,
-                        fugit, rerum temporibus nesciunt amet maxime dolores blanditiis quam cupiditate alias
-                        voluptatum, dolore sit aperiam quo! Odio.</p>
-                </div>
-            </div>
-            <!-- about block in section showcase ends here -->
-            <div class="box2">
-                <h2 class="active">What We Do?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ut nemo excepturi pariatur
-                    iste doloribus quasi, odit incidunt architecto sunt. Laudantium repellendus repudiandae
-                    reprehenderit error tempore veritatis corrupti soluta?</p>
+            <h2> <span class="active"> User/Costumer</span> Login</h2>
+            <div class="login-form">
+                <form >
+                    <input type="login-id" name="login-username-input" placeholder="Enter Username/Email"> <br>
+                    <input type="login-password" name="login-password-input" placeholder="Enter Password"> <br>
+                    <div>
+                    <label for="rememberme-radio">Remeber Me</label> 
+                    <input type="radio" name="rememberme-radio"> <br>
+                    </div>
+                    <button type="submit" name="login-btn">Login</button>
+                </form>
             </div>
         </div>
         <!-- section showcase ends here -->
